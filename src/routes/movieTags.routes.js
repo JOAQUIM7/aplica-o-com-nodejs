@@ -6,6 +6,7 @@ const tagsRoutes = Router();
 
 const movieTagsController = new MovieTagsController();
 
-tagsRoutes.post("/:user_id", movieTagsController.index)
+tagsRoutes.get("/:user_id", movieTagsController.index)
 
 module.exports = tagsRoutes;
+
